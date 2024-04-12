@@ -1,0 +1,11 @@
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://media.istockphoto.com/id/1246562175/photo/one-big-wall-clock-top-part-on-orange-background.jpg?s=612x612&w=0&k=20&c=a6lcdUnnHIuvP7DwdGtXVN-x7YX3R6cBZ2Rpp6u0TSI=");
+  background-size: cover;
+  filter: blur(10px); /* Adjust the blur intensity as needed */
+  z-index: -1; /* Send it to the back */
+}
