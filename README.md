@@ -2,8 +2,8 @@
 
 This is a simple Angular application for managing appointments. Users can add new appointments with descriptions, dates, and optional locations. They can also view a list of existing appointments and delete appointments as needed.
 
-![Appointment App Screenshot](src/assets/Screenshot%201.png)
-![Appointment App Screenshot](src/assets/Screenshot%202.png)
+![Appointment App Screenshot](src/assets/Screenshot1.png)
+![Appointment App Screenshot](src/assets/Screenshot2.png)
 
 ## Features
 
