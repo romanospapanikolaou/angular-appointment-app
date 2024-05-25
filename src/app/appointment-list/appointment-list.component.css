@@ -7,6 +7,7 @@
 }
 
 /* Card styling */
+
 .card {
   background-color: #f9f9f9;
   border-radius: 40px;
@@ -18,6 +19,7 @@
 
 .card:hover {
   transform: translateY(-5px);
+  animation: none; /* Disable animation on hover */
 }
 
 /* Row and column styling */
