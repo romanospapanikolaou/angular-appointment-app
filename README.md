@@ -48,4 +48,4 @@ Contributions are welcome! If you'd like to contribute to this project, feel fre
 ## Acknowledgements
 
 - Background picture by [Freepik](https://www.freepik.com/).
-- Built with [Angular](https://angular.io/).
+- Built with [Angular](https://angular.io/) and [Bootstrap](https://getbootstrap.com/).
