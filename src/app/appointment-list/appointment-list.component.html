@@ -24,6 +24,16 @@
         />
       </div>
     </div>
+    <div class="row">
+      <div class="col">
+        <input
+          class="form-control"
+          [(ngModel)]="newAppointmentLocation"
+          placeholder="Location"
+          (keydown.enter)="addAppointment()"
+        />
+      </div>
+    </div>
     <div class="row2">
       <button class="btn btn-primary w-100" (click)="addAppointment()">
         ADD
@@ -36,8 +46,8 @@
       class="list-group-item d-flex justify-content-between"
       *ngFor="let appointment of appointments; index as i"
     >
-      {{ appointment.title }} /
-      {{ appointment.date | date : "dd.MM.yyyy" }}
+      {{ appointment.title }} / {{ appointment.date | date : "dd.MM.yyyy" }} /
+      {{ appointment.location }}
       <button class="btn btn-danger" (click)="deleteAppointment(i)">
         DELETE
       </button>
