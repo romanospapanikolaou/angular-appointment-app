@@ -84,8 +84,8 @@
 }
 
 .btn-clear:hover {
-  background-color: #5a6268; /* Adjust color as needed */
-  border-color: #545b62; /* Adjust color as needed */
+  background-color: #5a6268;
+  border-color: #545b62;
   transform: scale(1.05);
 }
 
@@ -116,6 +116,7 @@
   margin-bottom: 10px;
   background-color: #fff;
   transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
 }
 
 .list-group-item:hover {
