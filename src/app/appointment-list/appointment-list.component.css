@@ -127,7 +127,7 @@
 }
 
 .list-group-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 
 /* Title styling */
