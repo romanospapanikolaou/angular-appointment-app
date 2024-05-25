@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Appointment } from '../models/appointment';
 
 @Component({
@@ -37,5 +37,13 @@ export class AppointmentListComponent implements OnInit {
   deleteAppointment(index: number): void {
     this.appointments.splice(index, 1);
     localStorage.setItem('appointments', JSON.stringify(this.appointments));
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent): void {
+    if (event.key === 'Backspace' && this.appointments.length > 0) {
+      this.appointments.pop();
+      localStorage.setItem('appointments', JSON.stringify(this.appointments));
+    }
   }
 }
