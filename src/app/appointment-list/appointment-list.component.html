@@ -11,6 +11,7 @@
           class="form-control"
           [(ngModel)]="newAppointmentTitle"
           placeholder="Appointment Description"
+          (keydown.enter)="addAppointment()"
         />
       </div>
       <div class="col">
@@ -19,11 +20,12 @@
           [(ngModel)]="newAppointmentDate"
           type="date"
           placeholder="Appointment Date"
+          (keydown.enter)="addAppointment()"
         />
       </div>
     </div>
     <div class="row2">
-      <button class="btn btn-primary w-100" (click)="addApointment()">
+      <button class="btn btn-primary w-100" (click)="addAppointment()">
         ADD
       </button>
     </div>

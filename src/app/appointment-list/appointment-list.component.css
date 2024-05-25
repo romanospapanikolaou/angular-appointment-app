@@ -1,3 +1,104 @@
+/* General container styling */
 .container {
-  width: 800px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Row and column styling */
+.row,
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.row2 {
+  justify-content: center;
+}
+
+.col {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+
+/* Input field styling */
+.form-control {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Appointment list styling */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Title styling */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
 }
