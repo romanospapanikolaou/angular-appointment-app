@@ -48,6 +48,8 @@ Once the application is running, follow these steps to use the appointment app:
    - Hover over the appointment you want to delete.
    - Click on the delete icon to remove the task from the list or press backspace.
 
+- Enjoy a responsive design that adapts to different screen sizes.
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
