@@ -73,6 +73,22 @@
   transform: scale(1.05);
 }
 
+.btn-clear {
+  background-color: #6c757d; /* Adjust color as needed */
+  border-color: #6c757d; /* Adjust color as needed */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 40px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.btn-clear:hover {
+  background-color: #5a6268; /* Adjust color as needed */
+  border-color: #545b62; /* Adjust color as needed */
+  transform: scale(1.05);
+}
+
 .btn-danger {
   background-color: #dc3545;
   border-color: #dc3545;
@@ -113,11 +129,11 @@
 
 /* Title styling */
 h2 {
-  font-size: 28px;
+  font-size: 36px;
   color: #333;
   margin-bottom: 20px;
   text-align: center;
-  animation: fadeInDown 1s ease-in-out;
+  animation: fadeInDown 2s ease-in-out;
 }
 
 /* Animations */

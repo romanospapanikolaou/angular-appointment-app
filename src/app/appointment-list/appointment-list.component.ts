@@ -55,4 +55,8 @@ export class AppointmentListComponent implements OnInit {
       localStorage.setItem('appointments', JSON.stringify(this.appointments));
     }
   }
+  clearAppointments(): void {
+    this.appointments = [];
+    localStorage.removeItem('appointments');
+  }
 }
