@@ -9,7 +9,7 @@ import { Appointment } from '../models/appointment';
 export class AppointmentListComponent implements OnInit {
   newAppointmentTitle: string = '';
   newAppointmentDate: Date = new Date();
-  newAppointmentLocation: string = ''; // Add this line
+  newAppointmentLocation: string = '';
   appointments: Appointment[] = [];
 
   ngOnInit(): void {
@@ -18,21 +18,17 @@ export class AppointmentListComponent implements OnInit {
   }
 
   addAppointment(): void {
-    if (
-      this.newAppointmentTitle.trim() &&
-      this.newAppointmentDate &&
-      this.newAppointmentLocation.trim()
-    ) {
+    if (this.newAppointmentTitle.trim() && this.newAppointmentDate) {
       const newAppointment: Appointment = {
         id: Date.now(),
         title: this.newAppointmentTitle,
         date: this.newAppointmentDate,
-        location: this.newAppointmentLocation, // Add this line
+        location: this.newAppointmentLocation || '',
       };
       this.appointments.push(newAppointment);
       this.newAppointmentTitle = '';
       this.newAppointmentDate = new Date();
-      this.newAppointmentLocation = ''; // Add this line
+      this.newAppointmentLocation = '';
 
       localStorage.setItem('appointments', JSON.stringify(this.appointments));
     }
