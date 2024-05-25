@@ -34,6 +34,20 @@ To run the Angular Weather App locally, follow these steps:
    ```
 5. Open your browser and navigate to [http://localhost:4200/](http://localhost:4200/) to view the app.
 
+## Usage
+
+Once the application is running, follow these steps to use the appointment app:
+
+1. **Add an appointment:**
+
+   - Enter the appointment details in the input field.
+   - Press Enter or click the "Add" button to add the appointment to the list.
+
+2. **Delete an appointment:**
+
+   - Hover over the appointment you want to delete.
+   - Click on the delete icon to remove the task from the list or press backspace.
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
