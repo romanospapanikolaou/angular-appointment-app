@@ -41,7 +41,16 @@ export class AppointmentListComponent implements OnInit {
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent): void {
-    if (event.key === 'Backspace' && this.appointments.length > 0) {
+    const focusedElement = document.activeElement;
+    const isInputField =
+      focusedElement instanceof HTMLInputElement ||
+      focusedElement instanceof HTMLTextAreaElement;
+
+    if (
+      event.key === 'Backspace' &&
+      !isInputField &&
+      this.appointments.length > 0
+    ) {
       this.appointments.pop();
       localStorage.setItem('appointments', JSON.stringify(this.appointments));
     }
