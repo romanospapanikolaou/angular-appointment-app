@@ -3,15 +3,21 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  font-family: "Arial", sans-serif;
 }
 
 /* Card styling */
 .card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* Row and column styling */
@@ -39,15 +45,15 @@
 .form-control {
   padding: 10px;
   font-size: 16px;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 1px solid #ced4da;
-  transition: border-color 0.2s;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .form-control:focus {
   border-color: #80bdff;
   outline: none;
-  box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+  box-shadow: 0 0 8px rgba(128, 189, 255, 0.5);
 }
 
 /* Button styling */
@@ -57,13 +63,14 @@
   color: #fff;
   padding: 10px;
   font-size: 16px;
-  border-radius: 4px;
-  transition: background-color 0.2s, border-color 0.2s;
+  border-radius: 6px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
 }
 
 .btn-primary:hover {
   background-color: #0056b3;
   border-color: #004085;
+  transform: scale(1.05);
 }
 
 .btn-danger {
@@ -72,13 +79,14 @@
   color: #fff;
   padding: 5px 10px;
   font-size: 14px;
-  border-radius: 4px;
-  transition: background-color 0.2s, border-color 0.2s;
+  border-radius: 6px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
 }
 
 .btn-danger:hover {
   background-color: #c82333;
   border-color: #bd2130;
+  transform: scale(1.05);
 }
 
 /* Appointment list styling */
@@ -88,8 +96,15 @@
   align-items: center;
   padding: 15px;
   border: 1px solid #dee2e6;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-bottom: 10px;
+  background-color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
 }
 
 .list-group-item:last-child {
@@ -98,7 +113,21 @@
 
 /* Title styling */
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   color: #333;
   margin-bottom: 20px;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
