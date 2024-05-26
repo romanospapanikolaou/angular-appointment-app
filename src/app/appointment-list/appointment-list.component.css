@@ -19,7 +19,7 @@
 
 .card:hover {
   transform: translateY(-5px);
-  animation: none; /* Disable animation on hover */
+  animation: none;
 }
 
 /* Row and column styling */
@@ -76,8 +76,8 @@
 }
 
 .btn-clear {
-  background-color: #6c757d; /* Adjust color as needed */
-  border-color: #6c757d; /* Adjust color as needed */
+  background-color: #6c757d;
+  border-color: #6c757d;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
