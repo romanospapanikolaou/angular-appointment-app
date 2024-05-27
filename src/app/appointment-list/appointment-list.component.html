@@ -8,6 +8,7 @@
           [(ngModel)]="newAppointmentTitle"
           placeholder="Appointment Description"
           (keydown.enter)="addAppointment()"
+          maxlength="30"
         />
       </div>
       <div class="col">
@@ -27,6 +28,7 @@
           [(ngModel)]="newAppointmentLocation"
           placeholder="Location (optional)"
           (keydown.enter)="addAppointment()"
+          maxlength="20"
         />
       </div>
     </div>
@@ -47,9 +49,13 @@
       class="list-group-item d-flex justify-content-between"
       *ngFor="let appointment of appointments; index as i"
     >
-      <strong>{{ appointment.title }}</strong> /
-      {{ appointment.date | date : "dd.MM.yyyy" }} /
-      {{ appointment.location }}
+      <div>
+        <strong>{{ appointment.title }}</strong>
+      </div>
+      <div>
+        <div>{{ appointment.date | date : "dd.MM.yyyy" }}</div>
+        <div>{{ appointment.location }}</div>
+      </div>
       <button class="btn btn-danger" (click)="deleteAppointment(i)">
         DELETE
       </button>

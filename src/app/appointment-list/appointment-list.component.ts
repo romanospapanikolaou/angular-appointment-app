@@ -19,11 +19,15 @@ export class AppointmentListComponent implements OnInit {
 
   addAppointment(): void {
     if (this.newAppointmentTitle.trim() && this.newAppointmentDate) {
+      // Truncate the description and location to 40 characters
+      const truncatedDescription = this.newAppointmentTitle.substring(0, 30);
+      const truncatedLocation = this.newAppointmentLocation.substring(0, 20);
+
       const newAppointment: Appointment = {
         id: Date.now(),
-        title: this.newAppointmentTitle,
+        title: truncatedDescription,
         date: this.newAppointmentDate,
-        location: this.newAppointmentLocation || '',
+        location: truncatedLocation || '',
       };
       this.appointments.push(newAppointment);
       this.newAppointmentTitle = '';
