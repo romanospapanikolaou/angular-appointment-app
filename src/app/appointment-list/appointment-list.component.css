@@ -54,8 +54,7 @@
 
 .form-control:focus {
   border-color: #80bdff;
-  outline: none;
-  box-shadow: 0 0 10px rgba(128, 189, 255, 0.5);
+  box-shadow: 0 0 10px rgba(128, 189, 255, 0.9);
 }
 
 /* Button styling */
